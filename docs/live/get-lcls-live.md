@@ -29,4 +29,6 @@ The remote archiver requires an ssh tunnel, which can be configured using the `c
 
 ## Datamaps 
 
-A utility notebook for generating datamaps is provided in `examples/LCLS_datamaps.ipynb`. This constructs relevant datamaps using the `pytao` Tao interface and requires setting the `$LCLS_LATTICE` and `$ACC_ROOT_DIR` 
+A utility notebook for generating datamaps is provided in `examples/LCLS_datamaps.ipynb`. This constructs relevant datamaps using the `pytao` Tao interface and requires setting the `$LCLS_LATTICE` and `$ACC_ROOT_DIR` environment variables. 
+
+Datamaps may subsequently be loaded using the utility function `get_datamaps(config_name)` in `lcls_live.datamaps`. The configuration name indicates the beamline to be used. At present, `cu_hxr` and `cu_sxr` are configured.
